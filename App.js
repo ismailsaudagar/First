@@ -1,0 +1,1 @@
+function mycontroller(o){o.foods="",o.CheckToMuch=function(){var e=o.foods;if(!/^[A-Za-z,]+$/.test(e))return alert("Please enter the data first"),e="",o.foods="",!1;if(e){var t=e.split(",");t.length<=3&&t.length>0?o.foods="Enjoy!":o.foods="Too much!"}}}angular.module("myapp",[]).controller("mycontroller",mycontroller),mycontroller.$inject=["$scope"];
